@@ -170,10 +170,14 @@
          }
     
          .icon:hover{
-            color: #ff6a00;
+            color: white;
          }
-         #login{
-            
+         #login:hover{
+            background-color: #ff6a00;
+            height: auto;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
          }
          
     
