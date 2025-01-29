@@ -5,39 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MMarket - Main Page</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mainpage.css">
     <link rel="stylesheet" href="css/cart.css">
-    <link rel="icon" href="img/logo.png">
 </head>
-<body>
-    <header>
-        <nav id="header-left">
-            <button id="menu-button">
-                <img src="img/menu.png" alt="Menu">
-            </button>
-            <a href="index.html">
-                <div id="logo-container">
-                    <img src="img/logo.png" alt="MMarket Logo">
-                    <h1>MMarket</h1>
+<body style="background-color: #f5f5f5;">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbarfluid container-fluid position-relative row">
+            <div class="col-3 col-md-2 col-lg-1">
+              <button class="navbar-toggler  " id="humbruger"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <!-- logo -->
+
+            <div class="navbar col-9 col-md-4" >
+                <div class="d-flex container-fluid">
+                    <img src="img/logo.png" class="img-fluid" id="logo">
+                    <a href="index.html" style="text-decoration: none;"><p id="logotext" >MMarket</p></a>
+
                 </div>
-            </a>
-        </nav>
-        <div id="seachbar-div">
-            <input type="text" size="45" placeholder="Search...">
+            </div>
+
+            
+
+             <!-- search box -->
+             <div class="search-box col-8 col-md-4">
+                <input type="text" placeholder="Search here...">
+                <span class="search-icon"><img src="img/search (2).svg" class="icon"></span>
+              </div>
+            
+
+
+
+            <!-- login icon -->
+             <div class="col-lg-1 d-none d-sm-block d-md-none d-lg-block col-1"></div>
+
+            <div class="col-md-2 col-2 d-flex justify-content-around">
+            <div class="d-flex " id="login1" >
+                <img src="img/user.png" class="icon">
+                <a href="entry.html" style="text-decoration: none;"><p class="icon">Login</p></a>
+            </div>
+
+
+
+            <!-- cart -->
+            <div class="" id="login1" >
+                <a href="cart.html" style="text-decoration: none;"><img src="img/cart.png" class="icon"></a>
+            </div>
+
         </div>
-        <nav id="header-right">
-            <a href="entry.html">
-                <button id="login-button">
-                    <img src="img/user.png" alt="Login">
-                    <span>Login</span>
-                </button>
-            </a>
-            <a href="cart.html">
-                <button id="cart-button">
-                    <img src="img/cart.png" alt="Cart">
-                </button>
-            </a>
-        </nav>
-    </header>
+
+
+
+            <div class=" collapse navbar-collapse dropdown-menu  " id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Top-Level Menu -->
+                    <li class="nav-item">
+
+                        <!-- home linkki -->
+
+                        <a class="nav-link nav-menu" href="index.html"  >
+                         Home
+                        </a>
+
+                        <!-- product linkki -->
+                        <a class="nav-link nav-menu dropdown-toggle" href="item.html" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            Products
+                        </a>
+                          
+
+                        <!-- Contact us -->
+
+
+                        <a class="nav-link nav-menu" href="index.html"  >
+                            Contact-Us
+                        </a>
+
+
+                        <!-- Jobs -->
+
+
+                        <a class="nav-link nav-menu" href="job.html"  >
+                           Jobs
+                        </a>
+
+
+                        
+                        <ul class="dropdown-menu" id="Alldropdown" aria-labelledby="menuDropdown">
+                            <!-- First-Level Submenu -->
+                            <li class="dropdown">
+                                <a class="dropdown-item dropdown-toggle " href="item.html" id="foodDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Food
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="foodDropdown">
+                                    <!-- Second-Level Submenu -->
+                                    <li class="dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="item.html" id="fruitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Fruit
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="fruitDropdown">
+                                            <!-- Third-Level Submenu -->
+                                            <li><a class="dropdown-item" href="item.html">Apple</a></li>
+                                            <li><a class="dropdown-item" href="item.html">Banana</a></li>
+                                            <li><a class="dropdown-item" href="item.html">Cherry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="item.html">Pizza</a></li>
+                                    <li><a class="dropdown-item" href="item.html">Pasta</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="item.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="item.html">Desserts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
 
     <main id="cart-display">
         <span id="cart-title">My cart</span> <span id="cart-count">2 items</span>
@@ -243,5 +333,7 @@
             <div class="button-n">Nearest MM</div>
         </div>
     </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,10 +1,16 @@
 article{
     padding: 20px;
 }
-.search-bar{
+.search-bar {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+}
+.search-bar>input{
+    height: 50px;
+    border-radius: 15px;
+    padding-left: 10px;
+  
 }
 .search-bar button{
     padding: 10px 20px;
@@ -13,6 +19,7 @@ article{
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    
 }
 .job-list{
     display: flex;
@@ -27,9 +34,12 @@ article{
     border: 1px solid;
     border-radius: 8px;
     background-color: #D9D9D9;
+    height: 60px;
 }
 .job-title{
     font-weight: bold;
+    font-size: large;
+    margin-left: 24px;
 }
 .load-more button{
     margin-top: 20px;
@@ -39,4 +49,8 @@ article{
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    margin-bottom: 15px;
+    
+    
+    
 }

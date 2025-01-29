@@ -3,86 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job opportunities</title>
+    <title>MMarket - Main Page</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mainpage.css">
     <link rel="stylesheet" href="css/job.css">
 </head>
-<body>
-    <header>
-        <nav id="header-left">
-            <button id="menu-button">
-                <img src="img/menu.png" alt="Menu">
-            </button>
-            <a href="index.html">
-                <div id="logo-container">
-                    <img src="img/logo.png" alt="MMarket Logo">
-                    <h1>MMarket</h1>
+<body style="background-color: #f5f5f5;">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbarfluid container-fluid position-relative row">
+            <div class="col-3 col-md-2 col-lg-1">
+              <button class="navbar-toggler  " id="humbruger"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <!-- logo -->
+
+            <div class="navbar col-9 col-md-4" >
+                <div class="d-flex container-fluid">
+                    <img src="img/logo.png" class="img-fluid" id="logo">
+                    <a href="index.html" style="text-decoration: none;"><p id="logotext" >MMarket</p></a>
+
                 </div>
-            </a>
-        </nav>
-        <div id="seachbar-div">
-            <input type="text" size="45" placeholder="Search...">
-        </div>
-        <nav id="header-right">
-            <a href="entry.html">
-                <button id="login-button">
-                    <img src="img/user.png" alt="Login">
-                    <span>Login</span>
-                </button>
-            </a>
-            <a href="cart.html">
-                <button id="cart-button">
-                    <img src="img/cart.png" alt="Cart">
-                </button>
-            </a>
-        </nav>
-    </header>
+            </div>
 
-    <article>
-        <div class="search-bar">
-            <input type="text" placeholder="Industry">
-            <input type="text" placeholder="Location or Postal Code">
-            <button>Search Jobs</button>
-        </div>
+            
 
-        <div class="job-list">
-            <div class="jobb">
-                <div class="job-title">Software Engineer</div>
-                <div class="job-date">15.01.2025</div>
-                <div class="job-location">Helsinki Uusimaa 00400</div>
+             <!-- search box -->
+             <div class="search-box col-8 col-md-4">
+                <input type="text" placeholder="Search here...">
+                <span class="search-icon"><img src="img/search (2).svg" class="icon"></span>
+              </div>
+            
+
+
+
+            <!-- login icon -->
+             <div class="col-lg-1 d-none d-sm-block d-md-none d-lg-block col-1"></div>
+
+            <div class="col-md-2 col-2 d-flex justify-content-around">
+            <div class="d-flex " id="login1" >
+                <img src="img/user.png" class="icon">
+                <a href="entry.html" style="text-decoration: none;"><p class="icon">Login</p></a>
             </div>
-            <div class="jobb">
-                <div class="job-title">Software Engineer</div>
-                <div class="job-date">15.01.2025</div>
-                <div class="job-location">Helsinki Uusimaa 00400</div>
+
+
+
+            <!-- cart -->
+            <div class="" id="login1" >
+                <a href="cart.html" style="text-decoration: none;"><img src="img/cart.png" class="icon"></a>
             </div>
-            <div class="jobb">
-                <div class="job-title">Software Engineer</div>
-                <div class="job-date">15.01.2025</div>
-                <div class="job-location">Helsinki Uusimaa 00400</div>
-            </div>
-            <div class="jobb">
-                <div class="job-title">Software Engineer</div>
-                <div class="job-date">15.01.2025</div>
-                <div class="job-location">Helsinki Uusimaa 00400</div>
-            </div>
-            <div class="jobb">
-                <div class="job-title">Software Engineer</div>
-                <div class="job-date">15.01.2025</div>
-                <div class="job-location">Helsinki Uusimaa 00400</div>
-            </div>
-            <div class="jobb">
-                <div class="job-title">Software Engineer</div>
-                <div class="job-date">15.01.2025</div>
-                <div class="job-location">Helsinki Uusimaa 00400</div>
-            </div>
-        </div>
-        <div class="load-more">
-            <button>Load more</button>
 
         </div>
-    </article>
 
+
+
+            <div class=" collapse navbar-collapse dropdown-menu  " id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Top-Level Menu -->
+                    <li class="nav-item">
+
+                        <!-- home linkki -->
+
+                        <a class="nav-link nav-menu" href="index.html"  >
+                         Home
+                        </a>
+
+                        <!-- product linkki -->
+                        <a class="nav-link nav-menu dropdown-toggle" href="item.html" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            Products
+                        </a>
+                          
+
+                        <!-- Contact us -->
+
+
+                        <a class="nav-link nav-menu" href="index.html"  >
+                            Contact-Us
+                        </a>
+
+
+                        <!-- Jobs -->
+
+
+                        <a class="nav-link nav-menu" href="job.html"  >
+                           Jobs
+                        </a>
+
+
+                        
+                        <ul class="dropdown-menu" id="Alldropdown" aria-labelledby="menuDropdown">
+                            <!-- First-Level Submenu -->
+                            <li class="dropdown">
+                                <a class="dropdown-item dropdown-toggle " href="item.html" id="foodDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Food
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="foodDropdown">
+                                    <!-- Second-Level Submenu -->
+                                    <li class="dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="item.html" id="fruitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Fruit
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="fruitDropdown">
+                                            <!-- Third-Level Submenu -->
+                                            <li><a class="dropdown-item" href="item.html">Apple</a></li>
+                                            <li><a class="dropdown-item" href="item.html">Banana</a></li>
+                                            <li><a class="dropdown-item" href="item.html">Cherry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="item.html">Pizza</a></li>
+                                    <li><a class="dropdown-item" href="item.html">Pasta</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="item.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="item.html">Desserts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 ">
+            <div class="search-bar justify-content-center align-items-center">
+                <input type="text" placeholder="Industry">
+                <input type="text" placeholder="Location or Postal Code">
+                <button>Search Jobs</button>
+            </div>
+    
+            <div class="job-list">
+                <div class="jobb">
+                    <div class="job-title">Software Engineer</div>
+                    <div class="job-date">15.01.2025</div>
+                    <div class="job-location">Helsinki Uusimaa 00400</div>
+                </div>
+                <div class="jobb">
+                    <div class="job-title">Software Engineer</div>
+                    <div class="job-date">15.01.2025</div>
+                    <div class="job-location">Helsinki Uusimaa 00400</div>
+                </div>
+                <div class="jobb">
+                    <div class="job-title">Software Engineer</div>
+                    <div class="job-date">15.01.2025</div>
+                    <div class="job-location">Helsinki Uusimaa 00400</div>
+                </div>
+                <div class="jobb">
+                    <div class="job-title">Software Engineer</div>
+                    <div class="job-date">15.01.2025</div>
+                    <div class="job-location">Helsinki Uusimaa 00400</div>
+                </div>
+                <div class="jobb">
+                    <div class="job-title">Software Engineer</div>
+                    <div class="job-date">15.01.2025</div>
+                    <div class="job-location">Helsinki Uusimaa 00400</div>
+                </div>
+                <div class="jobb">
+                    <div class="job-title">Software Engineer</div>
+                    <div class="job-date">15.01.2025</div>
+                    <div class="job-location">Helsinki Uusimaa 00400</div>
+                </div>
+            </div>
+            <div class="load-more justify-content-center align-content-center d-flex">
+                <button>Load more</button>
+            </div>
+        </div>
+        
+        <div class="col-1"></div>
+    </div>
     <footer>
         <div class="footer-section">
             <h3>MMArket</h3>
@@ -145,5 +239,6 @@
             <div class="button-n">Nearest MM</div>
         </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
